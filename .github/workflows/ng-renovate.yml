@@ -2,10 +2,10 @@ name: Angular-Org Renovate
 
 on:
   workflow_dispatch:
-  schedule:
-    # Runs every 60 minutes.
-    # This is the recommanded running time https://github.com/renovatebot/renovate/discussions/16658
-    - cron: '0/60 * * * *'
+  # schedule:
+  #   # Runs every 60 minutes.
+  #   # This is the recommanded running time https://github.com/renovatebot/renovate/discussions/16658
+  #   - cron: '0/60 * * * *'
 
 # Declare default permissions as read only.
 permissions:
