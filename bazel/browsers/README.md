@@ -102,7 +102,7 @@ platform_http_file(
    curl -L <BROWSER_URL> | shasum -a 256
    ```
 
-3. Go to https://firefox-source-docs.mozilla.org/testing/geckodriver/Support.html and find a version that is compatible with the version of Firefox being used.
+3. Visit https://firefox-source-docs.mozilla.org/testing/geckodriver/Support.html to find a compatible Geckodriver version.
 
 4. Update the `geckodriver` repository URLs to the desired version:
 
