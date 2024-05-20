@@ -4,6 +4,7 @@ module.exports = {
   platform: 'github',
   branchNameStrict: true,
   forkMode: true,
+  dryRun: 'full',
   // Renovate fork PRs should never be editable as Renovate would otherwise
   // not be able to delete the branches and future updates would be missed.
   forkModeDisallowMaintainerEdits: true,
@@ -11,12 +12,7 @@ module.exports = {
   persistRepoData: true,
   allowedPostUpgradeCommands: ['.'],
   repositories: [
-    'angular/angular',
-    'angular/dev-infra',
-    'angular/components',
-    'angular/angular-cli',
-    'angular/vscode-ng-language-service',
-    'angular/.github',
+    'legendary-spoon/orig',
   ],
   hostRules: [
     {
