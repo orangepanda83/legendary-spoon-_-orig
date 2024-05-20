@@ -59,9 +59,9 @@ uploaded files (as printed by the script to the terminal output).
 
 ## Puppeteer
 
-1. Visit https://github.com/puppeteer/puppeteer/blob/master/docs/api.md to determine which version of puppeteer corresponds to the version of Chrome desired.
+1. Visit https://github.com/puppeteer/puppeteer/blob/master/docs/api.md to find the corresponding version of Puppeteer for the desired Chrome version.
 
-2. Visit https://chromedriver.chromium.org/downloads to determine which version of ChromeDriver should be used for the version of Chrome desired.
+2. Visit https://chromedriver.chromium.org/downloads to find the appropriate ChromeDriver version.
 
    > NOTE:
    > The version of Chrome does not necessarily correspond exactly with the version of ChromeDriver.
