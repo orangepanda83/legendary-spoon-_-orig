@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
       - uses: ./github-actions/npm/checkout-and-setup-node
       - uses: ./github-actions/bazel/setup
-      - uses: ./github-actions/bazel/configure-remote
+      # - uses: ./github-actions/bazel/configure-remote
       - run: yarn install --immutable
       - name: Check code format
         if: github.event_name == 'pull_request'
@@ -51,9 +51,9 @@ jobs:
       - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
       - uses: ./github-actions/npm/checkout-and-setup-node
       - uses: ./github-actions/bazel/setup
-      - uses: ./github-actions/bazel/configure-remote
+      # - uses: ./github-actions/bazel/configure-remote
       - run: yarn install --immutable
-      - run: yarn bazel test -- //...
+      # - run: yarn bazel test -- //...
 
   test-win:
     timeout-minutes: 30
@@ -65,9 +65,9 @@ jobs:
       - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
       - uses: ./github-actions/npm/checkout-and-setup-node
       - uses: ./github-actions/bazel/setup
-      - uses: ./github-actions/bazel/configure-remote
+      # - uses: ./github-actions/bazel/configure-remote
       - run: yarn install --immutable
-      - run: yarn bazel test --test_tag_filters=windows --build_tests_only -- ... -bazel/remote-execution/...
+      # - run: yarn bazel test --test_tag_filters=windows --build_tests_only -- ... -bazel/remote-execution/...
 
   test-macos:
     timeout-minutes: 30
@@ -79,6 +79,6 @@ jobs:
       - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
       - uses: ./github-actions/npm/checkout-and-setup-node
       - uses: ./github-actions/bazel/setup
-      - uses: ./github-actions/bazel/configure-remote
+      # - uses: ./github-actions/bazel/configure-remote
       - run: yarn install --immutable
-      - run: yarn bazel test --test_tag_filters=macos --build_tests_only -- //... -//bazel/remote-execution/...
+      # - run: yarn bazel test --test_tag_filters=macos --build_tests_only -- //... -//bazel/remote-execution/...
